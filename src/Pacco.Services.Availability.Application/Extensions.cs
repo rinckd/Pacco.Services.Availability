@@ -7,7 +7,8 @@ namespace Pacco.Services.Availability.Application
 {
     public static class Extensions
     {
-        public static IConveyBuilder AddApplication(this IConveyBuilder builder) => builder.AddCommandHandlers()
-            .AddQueryHandlers().AddInMemoryCommandDispatcher().AddInMemoryQueryDispatcher();
+        public static IConveyBuilder AddApplication(this IConveyBuilder builder) => builder
+            .AddCommandHandlers()
+            .AddInMemoryCommandDispatcher();
     }
 }
