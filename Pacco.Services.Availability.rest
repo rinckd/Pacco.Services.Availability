@@ -1,5 +1,5 @@
 @url = http://localhost:5001
-@resourceId = 10000000-0000-0000-0000-000000000001
+@resourceId = 30000000-0000-0000-0000-000000000001
 @customerId = 00000000-0000-0000-0000-000000000000
 @dateTime = 2020-01-10
 @tags = ["vehicle", "armor"]
@@ -8,10 +8,10 @@
 GET {{url}}/resources?tags={{tags}}&matchAllTags=false
 
 ###
-GET {{url}}/api/resources/{{resourceId}}
+GET {{url}}/resources/{{resourceId}}
 
 ###
-POST {{url}}/api/resources
+POST {{url}}/resources
 Content-Type: application/json
 
 {
