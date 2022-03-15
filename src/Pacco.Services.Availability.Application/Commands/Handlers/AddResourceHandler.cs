@@ -6,7 +6,7 @@ using Pacco.Services.Availability.Core.Repositories;
 
 namespace Pacco.Services.Availability.Application.Commands.Handlers
 {
-    public class AddResourceHandler : ICommandHandler<AddResource>
+    internal sealed class AddResourceHandler : ICommandHandler<AddResource>
     {
         private readonly IResourcesRepository _resourcesRepository;
 
