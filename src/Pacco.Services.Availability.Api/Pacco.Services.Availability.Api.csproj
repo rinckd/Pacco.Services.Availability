@@ -21,8 +21,4 @@
     <Content Include="certs\**" CopyToPublishDirectory="Always" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers" />
-  </ItemGroup>
-
 </Project>
