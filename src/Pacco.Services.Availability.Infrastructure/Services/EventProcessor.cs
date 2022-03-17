@@ -35,10 +35,6 @@ namespace Pacco.Services.Availability.Infrastructure.Services
             _logger.LogTrace("Processing integration events..");
             var integrationEvents = _eventMapper.MapAll(events);
             await _messageBroker.PublishAsync(integrationEvents);
-            
-            
-            
-            throw new System.NotImplementedException();
         }
     }
 }
