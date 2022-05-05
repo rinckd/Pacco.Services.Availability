@@ -20,7 +20,7 @@ namespace Pacco.Services.Availability.Api
             => WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(services =>
                 {
-                    services.AddControllers();
+                    services.AddControllers().AddNewtonsoftJson();
                     services
                         .AddConvey()
                         .AddApplication()

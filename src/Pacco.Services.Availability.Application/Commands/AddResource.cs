@@ -12,9 +12,8 @@ namespace Pacco.Services.Availability.Application.Commands
 
         public AddResource(Guid resourceId, IEnumerable<string> tags)
         {
-            ResourceId = resourceId;
+            ResourceId = resourceId == Guid.Empty ? Guid.NewGuid() : resourceId;
             Tags = tags;
-
         }
     }
 }
